@@ -1,0 +1,24 @@
+<div>
+    <p>profile works!</p>
+</div>
+
+<div [formGroup]="formUser" >
+    <div>
+    First Name:
+        <input type="text" formControlName="firstName" />
+    </div>
+    <div>
+    Last Name:
+        <input type="text" formControlName="lastName" />
+    </div>
+    <div>
+        <button (click)="onSubmit()">Submit</button>
+    </div>
+</div>
+
+<div>
+    {{this.formUser.value.firstName}}
+    {{this.formUser.value.lastName}}
+</div>
+
+<button routerLink="/text">Text</button>

@@ -1,0 +1,37 @@
+<p>calculator works!</p>
+
+<div class="calculator">
+    <div class="display">{{ display }}</div>
+
+    <div class="row">
+        <button (click)="onSaveData($event, 'C')" class="clear">Clear</button>
+        <button (click)="onSaveData($event, '÷')" class="calculate">÷</button>
+    </div>
+
+    <div class="row">
+        <button (click)="onSaveData($event, '7')">7</button>
+        <button (click)="onSaveData($event, '8')">8</button>
+        <button (click)="onSaveData($event, '9')">9</button>
+        <button (click)="onSaveData($event, '×')" class="calculate">×</button>
+    </div>
+
+    <div class="row">
+        <button (click)="onSaveData($event, '4')">4</button>
+        <button (click)="onSaveData($event, '5')">5</button>
+        <button (click)="onSaveData($event, '6')">6</button>
+        <button (click)="onSaveData($event, '-')" class="calculate">−</button>
+    </div>
+
+    <div class="row">
+        <button (click)="onSaveData($event, '1')">1</button>
+        <button (click)="onSaveData($event, '2')">2</button>
+        <button (click)="onSaveData($event, '3')">3</button>
+        <button (click)="onSaveData($event, '+')" class="calculate">+</button>
+    </div>
+
+    <div class="row">
+        <button (click)="onSaveData($event, '0')" class="zero">0</button>
+        <button (click)="onSaveData($event, '.')">.</button>
+        <button (click)="onSaveData($event, '=')" class="calculate">=</button>
+    </div>
+</div>

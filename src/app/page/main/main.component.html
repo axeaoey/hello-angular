@@ -1,0 +1,60 @@
+<p>main works!</p>
+
+<div class="date">
+  <div>{{now}}</div>
+  <div>{{now | date}}</div>
+  <div>{{now | date:'shortDate'}}</div>
+</div>
+
+<br />
+
+<div [formGroup]="formUser">
+  <div>
+    First Name:
+    <input type="text" formControlName="firstName" />
+  </div>
+  <div>
+    Last Name:
+    <input type="text" formControlName="lastName" />
+  </div>
+  <div>
+    <button (click)="onSubmit()">Submit</button>
+  </div>
+</div>
+
+
+<p> This : {{ page }} </p>
+<p> {{ title }}</p>
+<input type="text" [value]="page"/>
+<button (click)="onClickButton()">click !</button>
+
+<p>
+@if (title) {
+    <app-text></app-text>
+}@else if (!title) {
+    <span>...Something...</span>
+} @else {
+    <!--HTML-->
+}
+</p>
+
+@for (no of multiply; track no; let idx = $index) {
+    <div>({{ idx + 1 }}) {{ 2 }} * {{ no }} = {{ no * 2 }}</div>
+}
+<br/>
+
+@switch (title) {
+    @case (false) {
+        <div>title = false</div>
+    }
+    @case (true) {
+        <div>title = true</div>
+    }
+    @default {
+        <div>default</div>
+    }
+}
+
+
+
+<app-text></app-text>
