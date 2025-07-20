@@ -1,6 +1,21 @@
-<h1>Hello: {{ name }}</h1>
-<h2>Faculty: {{ faculty }} </h2>
-<button (click)="goBack()">Back</button>
-<button routerLink="/main">main</button>
-<button routerLink="/calculator">calculator</button>
+<h1 class="text-[rgb(133,42,151)] text-2xl font-bold">Hello: {{ name }}</h1>
+<h2 class="text-[#d46191] text-xl mb-4">Faculty: {{ faculty }}</h2>
+
+<div class="space-x-2">
+    <button (click)="goBack()" class="bg-gray-300 hover:bg-gray-400 text-black font-semibold py-2 px-4 rounded">
+    Back
+    </button>
+    <button routerLink="/main" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded">
+    Main
+    </button>
+    <button routerLink="/calculator" class="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded">
+    Calculator
+    </button>
+    <button routerLink="/calculator-2" class="bg-purple-500 hover:bg-purple-600 text-white font-semibold py-2 px-4 rounded">
+    Calculator Tailwind
+    </button>
+</div>
+
+
+
 <router-outlet />
